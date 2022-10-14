@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+  <h3>確認</h3>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    <p>本当に削除していいですか　"{{object}}"</p>
+    <tr>
+    <a class="btn btn-secondary" href="{{request.META.HTTP_REFERER}}">戻る</a>
+    {# <a class="btn btn-secondary" href="{% url 'urls' %}">戻る</a> #}
+    <input class="btn btn-danger" type="submit" value="削除">
+  </tr>
+  </form>
+</div>
+{% endblock content %}

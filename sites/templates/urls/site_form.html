@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+<div class="container">
+  
+{% block content %}
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <div class="formWrapper">
+    {# <h3 class="form-title">登録/編集</h3> #}
+    {% if form.title.value != None %}
+    <h3 class="form-title">編集</h3>
+    {% else %} 
+    <h3 class="form-title">登録</h3>
+    {% endif %}
+  {% comment %} {{form.as_p}} {% endcomment %}
+
+  {% comment %} <div class="form__field">
+    <label for="formInput#text">Text Field: </label>
+    <input class="input input--text" id="formInput#text" type="text" name="text"
+        placeholder="Enter text" />
+  </div> {% endcomment %}
+
+{% for field in form %}
+  </label>{{field.label}}</label>
+  <div class='form-field'>{{field}}</div>
+  {% endfor %}
+  <a class="btn btn-secondary" href="{% url 'urls' %}">戻る</a>
+  <input class="btn btn-primary" type="submit" value="送信">
+  </div>
+</form>
+{% endblock content %}
+  
+</div>

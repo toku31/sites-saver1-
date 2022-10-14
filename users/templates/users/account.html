@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-5 mx-auto">
+  <h3 class="title text-center">My Account</h3>
+
+    <table class="table table-striped mb-4">
+      <tbody>
+        <tr class="py-5 mb-5">
+          <th class="header">名前</th>
+          <td class="data">{{ profile.name }}</td>
+        </tr>
+        <tr "py-5 mb-5">
+          <th class="header">メールアドレス</th>
+          <td class="data">{{profile.email}} </td>
+        </tr>
+        <tr>
+          <th class="header">挨拶文</th>
+          <td class="data">{{profile.short_intro}} </td>
+        </tr>
+        <tr>
+          <th class="header">自己紹介</th>
+          <td class="data">{{profile.bio}} </td>
+        </tr>
+        <tr>
+          <th class="header">Github</th>
+          <td class="data">{{profile.social_github}} </td>
+        </tr>
+        <tr>
+          <th class="header">Website</th>
+          <td class="data">{{profile.social_website}} </td>
+        </tr>
+        <tr>
+          <th class="header">登録日</th>
+          <td class="data">{{profile.created}} </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="button mx-auto">
+      <a href="{% url 'edit-account' %}" class="btn btn-secondary btn-block">編集</a>
+    </div>
+  
+  {% comment %} {% endblock%} {% endcomment %}
+</div>
+{% endblock content %}

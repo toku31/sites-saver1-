@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% comment %} <h1>This is first app</h1> {% endcomment %}
+{% block content %}
+<div class="container">
+  <h4 class="mt-4">サイトの詳細 </h4>
+
+  <div class="d-flex justify-content-between">
+    <h2>{{site.title}} </h2>
+    {% if request.user.profile == site.user %} 
+    <a class="btn btn-secondary h-25" href="{% url 'update-site' site.id %}">編集</a>
+    {% endif%}
+  </div>
+
+  <h6 >カテゴリ：{{ site.category }}</h6>
+  <hr>
+  タグ：
+  {% for tag in tags %}
+  <span style="border:1px solid grey">{{tag}}</span>
+  {% endfor %}
+  <hr>
+  <h6>内容 : {{site.text | linebreaksbr}}</h6>
+  <hr>
+  <h6 >URL : {{ site.link }}</h6>
+  <hr>
+  {% comment %} <a class="btn btn-secondary" href="{% url 'update-site' site.id %}">編集</a> {% endcomment %}
+
+  
+  <h4 class="top-title">フィードバック</h4>
+  <h6>いいね率: {{site.vote_ratio}}%  評価数：{{site.vote_total}}票</h6>
+
+  <div>
+    {% if request.user.profile.id  in site.reviewers %}
+    <p class="mb-5">すでに評価済です</p>
+
+    {% elif request.user.profile == site.user %} 
+    <p class="mb-5">自身が掲載したサイトに評価できません</p>
+    {% elif request.user.is_authenticated %} 
+    <form class="form" action="{% url 'site' site.id %}" method="POST">
+      {% csrf_token %}
+      {% for field in form %}
+      <div class="form__field">
+        <label>{{ field.label}}</label> 
+        <div class='form-field'>{{field}}</div>
+        {# <textarea type="text" value="" id="commment_site" name="message"></textarea> #}
+      </div>
+      {% endfor %}
+      <input type="submit" value="送信" class="btn--md btn-secondary">
+    </form> 
+    {% else %} 
+    <a href="{% url 'login' %}?next={{request.path}}">評価するのにログインしてください</a>
+    {% endif %}
+  </div>
+  <hr>
+  <h6>コメント欄 :</h6>
+  <div class="commentList">
+    {% for review in site.review_set.all %}
+    <div class="comment">
+      <a href="{% url 'user-profile' review.owner.id %}">{{review.owner.name}}</a> 
+      <p>{{review.body | linebreaksbr }}</P>
+    <div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
+

@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% comment %} <p>Hello, you are on the {{ page }} page</p> {% endcomment %}
+<div class="container">
+  <div class="row">
+    <main class="col-md-9">
+
+      <div class="d-md-flex justify-content-around">
+        <h3 class="top-title">お気に入りサイト</h3>
+
+        <div class="searchForm">
+          <form action="{% url 'urls' %}" method="get" class="form d-flex gap-3">
+              <div class="form__field">
+              <label for="search_site">サイト検索: </label> 
+              <input type="text" value="{{search_query}}" id="search_site" name="search_query">
+              </div>
+              <button type="submit" value="検索" class="btn--md btn-secondary"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      
+      <a class="btn btn-secondary" href="{% url 'create-site' %}">新規登録</a>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>タイトル</th>
+            <th>カテゴリ</th>
+            <th>評価</th>
+            {% comment %} <th>支持者数</th> {% endcomment %}
+            <th>日付</th>
+            <th>投稿者</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        {% for site in sites %}
+          <tr>
+            <td style="width:300px"> 
+              {% comment %} <a href="{% site.link ? None%}" target="_blank" style="text-decoration:none;"> {% endcomment %}
+              <a href="{{site.link}}" target="_blank" style="text-decoration:none;">
+              {{site.title}}
+              </a>
+            </td>
+            <td> {{site.category}}</td>
+            <td> {{site.vote_ratio}}%</td>
+            {% comment %} <td> {{site.vote_total}}</td> {% endcomment %}
+            <td> {{site.created | date:"Y年m月j日"}}</td>
+            <td> 
+              {% comment %} <a> {% endcomment %}
+             <a href="{% url 'user-profile' site.user.id %}">
+              {{site.user.name}}
+              </a>
+            </td>
+            <td class="d-flex gap-2"> 
+              {% comment %} <a class="btn btn-primary" href="{% url 'update-site' site.id %}">編集</a> {% endcomment %}
+              <a class="btn btn-primary" href="{% url 'site' site.id %}">詳細</a>
+              <a class="btn btn-danger" href="{% url 'delete-site' site.id %}">削除</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+
+      {# ページの表示 #} {# <p>{{sites}}</p>} #}
+      {# 1ページしかない時は表示しない #}
+      {% if sites.has_other_pages %}
+      <div class="pagination">
+        <ul class="container">
+          {% if sites.has_previous %}
+          <li><a href="?page={{sites.previous_page_number}}" class="btn page-link">&#10094;</a></li>
+          {% endif %}
+
+          {% for page in paginator.page_range %}
+      
+          {% if page == sites.number %}
+          <li><a href="?page={{page}}" class="btn  btn-secondary">{{page}}</a></li>
+          {% else %}
+          <li><a href="?page={{page}}" class="btn page-link">{{page}}</a></li>
+          {% endif %}
+          {% endfor %}
+
+          {% if sites.has_next %}
+          <li><a href="?page={{sites.next_page_number}}" class="btn page-link">&#10095;</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      {% endif %}
+
+    </main>
+
+    <aside class="col-md-3">
+       {% comment %} Hello {% endcomment %}
+       {% include "urls/sidebar.html" %}
+    </aside>
+  </div>
+
+</div>
+
+{% comment %} 
+{{ page_obj.number }} / {{ page_obj.paginator.num_pages }} ページ<br> {% endcomment %}
+
+{# 前へ #}
+{% comment %} {% if page_obj.has_previous %}
+<a href="?page=1">&laquo; 先頭</a>
+<a href="?page={{ page_obj.previous_page_number }}">前へ</a>
+{% endif %}
+
+{# 次へ #}
+{% if page_obj.has_next %}
+<a href="?page={{ page_obj.next_page_number }}">次へ</a>
+<a href="?page={{ page_obj.paginator.num_pages }}">最後 &raquo;</a>
+{% endif %}  {% endcomment %}
+
+
+{% endblock content %}

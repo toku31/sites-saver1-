@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% comment %} <p>Hello, you are on the {{ page }} page</p> {% endcomment %}
+<div class="container">
+  <div class="row">
+    <main class="col-md-9">
+      <h3 class="top-title">{{Tag}} お気に入りサイト</h3>
+      
+      <a class="btn btn-secondary" href="{% url 'create-site' %}">新規登録</a>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>サイト</th>
+            <th>カテゴリ</th>
+            <th>おすすめ度</th>
+            <th>支持者数</th>
+            <th>日付</th>
+            <th>投稿者</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        {% for site in tag_sites %}
+          <tr>
+            <td> {{site.title}}</td>
+            <td> {{site.category}}</td>
+            <td> {{site.vote_ratio}}%</td>
+            <td> {{site.vote_total}}</td>
+            <td> {{site.created}}</td>
+            <td> 
+              <a href="{% url 'user-profile' site.user.id %}">
+              {{site.user.name}}
+              </a>
+            </td>
+            <td> 
+              {% comment %} <a class="btn btn-primary" href="{% url 'update-site' site.id %}">編集</a> {% endcomment %}
+              <a class="btn btn-primary" href="{% url 'site' site.id %}">詳細</a>
+              <a class="btn btn-danger" href="{% url 'delete-site' site.id %}">削除</a>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </main>
+
+    <aside class="col-md-3">
+       {% comment %} Hello {% endcomment %}
+       {% include "urls/sidebar.html" %}
+    </aside>
+  </div>
+</div>
+
+{# ページの表示 #}
+{% if sites.has_other_pages %}
+<div class="pagination">
+  <ul class="container">
+    {% if sites.has_previous %}
+    <li><a href="?page={{sites.previous_page_number}}" class="btn page-link">&#10094;</a></li>
+    {% endif %}
+
+    {% for page in paginator.page_range %}
+
+    {% if page == sites.number %}
+    <li><a href="?page={{page}}" class="btn  btn-secondary">{{page}}</a></li>
+    {% else %}
+    <li><a href="?page={{page}}" class="btn page-link">{{page}}</a></li>
+    {% endif %}
+    {% endfor %}
+
+    {% if sites.has_next %}
+    <li><a href="?page={{sites.next_page_number}}" class="btn page-link">&#10095;</a></li>
+    {% endif %}
+  </ul>
+</div>
+{% endif %}
+
+{% endblock content %}

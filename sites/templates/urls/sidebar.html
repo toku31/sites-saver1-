@@ -1,0 +1,38 @@
+<div class='container'>
+<div class="card my-4">
+  <div class="card-header d-flex align-items-center justify-content-between">
+    <div>カテゴリ</div> 
+    <a class="btn--md btn-secondary h-25 px-1" href="{% url 'create-category' %}" style="text-decoration:none;"><i class="fas fa-edit"></i></a>
+  </div>
+  <ul class="list-group list-group-flush">
+    {% for category in categories|dictsort:"id" %}
+    <h6 class="list-group-item d-flex align-items-center">
+      <a href="{% url 'category-sites' category.id %}" class="card-link" style="text-decoration:none;">{{ category.name}}</a>
+      {% comment %} <a href="{% url 'category_post' category.slug %}" class="card-link">{{ category.name }}</a> {% endcomment %}
+      
+      {% comment %} <span class="badge badge-primary badge-pill">{{ category.num_posts }}</span> {% endcomment %}
+    </h6>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="card">
+  <div class="card-header d-flex align-items-center justify-content-between">
+    <div>タグ</div> 
+    <a class="btn--md btn-secondary h-25 px-1" href="{% url 'create-tag' %}" style="text-decoration:none;"><i class="fas fa-edit"></i></a>
+  </div>
+  <ul class="list-group list-group-flush">
+    {% comment %} {% for tag in tags|dictsortreversed:"num_posts"|slice:":5" %} {% endcomment %}
+    {% for tag in tags|dictsort:"id" %}
+    <h6 class="list-group-item d-flex justify-content-between align-items-center">
+      <a href="{% url 'tag-sites' tag.id %}" class="card-link" style="text-decoration:none;">{{ tag.name }}</a>
+      {% comment %} <a href="{% url 'blog:tag_post' tag.slug %}" class="card-link">{{ tag.name }}</a>
+      <span class="badge badge-primary badge-pill">{{ tag.num_posts }}</span> {% endcomment %}
+    </h6>
+    {% endfor %}
+  </ul>
+  {% comment %} <div class="card-body text-center">
+    <a href="{% url 'blog:tag_list' %}" class="card-link">すべてのタグを見る</a>
+  </div>  {% endcomment %}
+</div>
+</div>

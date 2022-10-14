@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% comment %} <p>Hello, you are on the {{ page }} page</p> {% endcomment %}
+<div class="d-md-flex justify-content-around">
+  <h3 class="top-title">ユーザリスト</h3>
+
+  <div class="searchForm">
+    <form action="{% url 'users-list' %}" method="get" class="form d-flex gap-3">
+        <divv class="form__field">
+         <label for="search_user">ユーザ検索: </label> 
+         <input type="text" value="{{search_query}}" id="search_user" name="search_query">
+        </divv>
+        <input type="submit" value="検索" class="btn--md btn-secondary">
+    </form>
+  </div>
+</div>
+
+{# <a class="btn btn-secondary" href="{% url 'create-site' %}">新規登録</a> #}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ユーザ名</th>
+      <th>メールアドレス</th>
+      <th>住所</th>
+      <th>挨拶文</th>
+      <th>登録日</th>
+      <th></th>
+    </tr>
+  </thead>
+  {% for profile in profiles %}
+    <tr>
+      <td> {{profile.name}}</td>
+      <td> {{profile.email}}</td>
+      <td> {{profile.location}}</td>
+      <td> {{profile.short_intro}}</td>
+      <td> {{profile.created}}</td>
+      <td> 
+        <a class="btn btn-warning" href="{% url 'user-profile' profile.id %}">詳細</a>
+      </td>
+      {% comment %} <td> 
+        <a class="btn btn-primary" href="{% url 'update-site' site.id %}">編集</a>
+        <a class="btn btn-danger" href="{% url 'delete-site' site.id %}">削除</a>
+        <a class="btn btn-warning" href="{% url 'site' site.id %}">詳細</a>
+      </td> {% endcomment %}
+    </tr>
+  {% endfor %}
+</table>
+
+
+{% comment %} {# ページの表示 #}
+{{ page_obj.number }} / {{ page_obj.paginator.num_pages }} ページ<br>
+
+{# 前へ #}
+{% if page_obj.has_previous %}
+<a href="?page=1">&laquo; 先頭</a>
+<a href="?page={{ page_obj.previous_page_number }}">前へ</a>
+{% endif %}
+
+{# 次へ #}
+{% if page_obj.has_next %}
+<a href="?page={{ page_obj.next_page_number }}">次へ</a>
+<a href="?page={{ page_obj.paginator.num_pages }}">最後 &raquo;</a>
+{% endif %} {% endcomment %}
+
+
+{% endblock content %}

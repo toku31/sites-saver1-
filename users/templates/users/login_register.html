@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block title %}Sign|Login{% endblock %}
+
+{% block content %}
+
+{% if page == 'register' %}
+<section id="register" class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card">
+          <div class="card-text bg-primary text-white">
+            <h4 class="pt-3 px-3">サインアップ</h4>
+          </div>
+          <div class="card-body">
+            <form action="{% url 'register' %}" method="POST">
+                {% csrf_token %}
+
+                {% for field in form %}
+                  <div class="form-group">
+                    <label>{{field.label}}</label>
+                    <div class='form-field'>{{field}}</div>
+
+                    {% if field.help_text %}
+                      <small>{{field.help_text}}</small>
+                    {% endif %}
+
+                    {% for error in field.errors %}
+                      <p style="color: red;">{{error}}</p>
+                    {% endfor %}
+                  </div>
+                {% endfor %}
+                
+               {% comment %} <div class="form-group">
+                  <label for="first_name">名前</label>
+                  <input type="text" name="first_name" class="form-control">
+                  {% if field.help_text %}
+                  <small>{{field.help_text}}</small>
+                  {% endif %}
+                </div>
+
+                <div class="form-group mt-3">
+                  <label for="email">メールアドレス</label>
+                  <input type="email" name="email" class="form-control">
+                  {% if field.help_text %}
+                  <small>{{field.help_text}}</small>
+                  {% endif %}
+                </div> 
+
+                <div class="form-group mt-3">
+                  <label for="username">ユーザネーム</label>
+                  <input type="text" name="username" class="form-control" required>
+                </div> 
+
+                <div class="form-group mt-3">
+                  <label for="password1">パスワード</label>
+                  <input type="password" name="password1" class="form-control" required>
+                  {% if field.help_text %}
+                  <small>{{field.help_text}}</small>
+                  {% endif %}
+                </div> 
+
+                <div class="form-group mt-3">
+                  <label for="password2">パスワード(確認)</label>
+                  <input type="password" name="password2" class="form-control" required>
+                  {% if field.help_text %}
+                  <small>{{field.help_text}}</small>
+                  {% endif %}
+                </div>  {% endcomment %}
+
+                <input type="submit" value="サインアップ" class="btn btn-secondary btn-block mt-3">
+
+                <div class="form-group mt-3">
+                  <p>既にアカウントをお持ちの方 <a href="{% url 'login' %}">ログイン</a></p> 
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+{% else %}
+
+<section id="login" class="bg-light py-5">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6 mx-auto">
+      <div class="card">
+        <div class="card-text bg-primary text-white">
+          <h4 class="pt-3 px-3">ログイン</h4>
+          {% comment %} <h4 ><i class="fas fa-sign-in-alt"></i> ログイン</h4> {% endcomment %}
+        </div>
+        <div class="card-body">
+          <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+
+            <div class="form-group">
+              <label for="username">ユーザ名</label>
+              <input type="text" name="username" class="form-control" required>
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="password">パスワード</label>
+              <input type="password" name="password" class="form-control" required>
+            </div>
+
+            <div class="form-group mt-3">
+              <input type="submit" value="ログイン" class="btn btn-secondary btn-block">
+            </div>
+
+            <div class="card-footer text-muted mt-3">
+              <small>
+              <p>アカウントをお持ちでない方 <a href="{% url 'register' %}">サインアップ</a></p>
+              </small>
+            </div>
+
+          <div class="py-2">
+            <small>
+              <a href="#" class="text-muted">パスワードを忘れましたか?</a>
+            </small>
+          </div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container my-5 mx-auto">
+  <h2 class="title text-center">プロフィール</h2>
+
+    <table class="table table-striped mb-4">
+      <tbody>
+        <tr class="py-5 mb-5">
+          <th class="header">名前</th>
+          <td class="data">{{ profile.name }}</td>
+        </tr>
+        <tr "py-5 mb-5">
+          <th class="header" style="width:150px;">メールアドレス</th>
+          <td class="data">{{profile.email}} </td>
+        </tr>
+        <tr>
+          <th class="header">自己紹介</th>
+          <td class="data">{{profile.bio}} </td>
+        </tr>
+        <tr>
+          <th class="header">画像</th>
+          <td class="data"><img class="img-fluid rounded-circle" style="width: 200px;" src={{ profile.profile_image.url }} alt=""></td>
+        </tr>
+
+        {% if profile.social_github %}
+        <tr>
+          <th class="header">Github</th>
+          <td class="data">{{profile.social_github}} </td>
+        </tr>
+        {% endif %}
+
+        {% if profile.social_website %}
+        <tr>
+          <th class="header">Website</th>
+          <td class="data">{{profile.social_website}} </td>
+        </tr>
+        {% endif %}
+
+        <tr>
+          <th class="header">登録日</th>
+          <td class="data">{{profile.created}} </td>
+        </tr>
+      </tbody>
+    </table>
+    {% comment %} <div class="button mx-auto">
+      <a href="" class="btn btn-secondary btn-block">編集</a>
+    </div> {% endcomment %}
+  
+</div>
+{% endblock content %}

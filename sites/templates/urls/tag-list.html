@@ -1,0 +1,14 @@
+<h4 class="form-title  mt-4">タグ一覧</h4>
+<table class="table">
+  {% for tag in tags %}
+  <tr>
+    <td style="width:200px"> 
+      {{tag.name}}
+    </td>
+    <td>  
+      <a class="btn btn-danger" href="{% url 'delete-tag' tag.id %}">削除</a>
+      {% comment %} <a class="btn btn-danger" href="{% url 'delete-site' site.id %}">削除</a> {% endcomment %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
