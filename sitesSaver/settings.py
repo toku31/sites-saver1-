@@ -30,7 +30,7 @@ DEBUG = False
 
 # ALLOWED_HOSTS = ['0.0.0.1']
 # ALLOWED_HOSTS = ['tranquil-fortress-87504.herokuapp.com', '127.0.0.1']
-ALLOWED_HOSTS = ['sites-saver1-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['sites-saver1-production.up.railway.app', '0.0.0.1']
 
 # Application definition
 
