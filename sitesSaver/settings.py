@@ -29,7 +29,7 @@ DEBUG = False
 
 # ALLOWED_HOSTS = ['0.0.0.1']
 # ALLOWED_HOSTS = ['tranquil-fortress-87504.herokuapp.com', '127.0.0.1']
-ALLOWED_HOSTS = ['sites-saver1-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['acidic-rabbits-production.up.railway.app', '127.0.0.1']
 
 # Application definition
 
@@ -214,4 +214,4 @@ MESSAGE_TAGS = {
 # whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CSRF_TRUSTED_ORIGINS = ['https://sites-saver1-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://acidic-rabbits-production.up.railway.app']
