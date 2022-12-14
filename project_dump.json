@@ -1,0 +1,950 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$HVEcbacI4Q6fa1Vb3lIIAm$fwRQQ/sQfHmfbf4hC5eciMc/hLBpeIROOZomOzrjFGo=",
+        "last_login": "2022-10-18T12:39:39.396Z",
+        "is_superuser": true,
+        "username": "toku",
+        "first_name": "Toku",
+        "last_name": "",
+        "email": "toku@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-07-23T02:18:15.526Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$FDj0RIvOE0zlYeiX4ta2rf$NDDvOpRT8zc4Dz1xbNC2u0+33VlB7sD+H3ZKmvj7Rps=",
+        "last_login": "2022-08-07T00:58:13.349Z",
+        "is_superuser": false,
+        "username": "johndoe",
+        "first_name": "John Doe",
+        "last_name": "",
+        "email": "john@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-23T02:32:25.039Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$wlTDANR3o7tBJSuOswTAG1$ax/W/vhhprcJ+HcQ92u/GV54746ShgX/rZAvf4Sn+PI=",
+        "last_login": "2022-08-06T10:36:18.735Z",
+        "is_superuser": false,
+        "username": "test",
+        "first_name": "テスト",
+        "last_name": "",
+        "email": "test@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-07-27T13:44:33.349Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$320000$iHf7gVlvfoK7Oh4VC0YBFl$npUG4yIHFMf7OU3g/y/FBXAejcR0W6lng1NvrMD2ZGg=",
+        "last_login": "2022-08-07T01:45:09.641Z",
+        "is_superuser": false,
+        "username": "test2",
+        "first_name": "テスト２",
+        "last_name": "",
+        "email": "a@a.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-08-07T01:45:09.464Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4l96nxxuar2aq11aa55obuqmig182aqw",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oI6jG:-LlszVNOTrm9QrQkYUld-RSJvjOHdODZzpHibBRAI5s",
+        "expire_date": "2022-08-14T11:03:26.756Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "890e7vsdhtxnv1e1nqmucttew4fbs5rw",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oFDP2:smXo0Bls7aORYE4vHMCb9haqDBolHE3OiSL_qsLYwbg",
+        "expire_date": "2022-08-06T11:34:36.011Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ga6qw3mx3pk52pifu8gs0b03f0w1qcsw",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oKVTz:yLT8yYl-2ZIuqf4qDv0skmaiC6Sw-TGeVliwAe8JCEc",
+        "expire_date": "2022-08-21T01:53:35.386Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "lqduy07abcl5z75clznmshx42cfp4is7",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oF5HO:1AEFps25uaQ76rydqDNL9uq-tjl4ZgktNd19QyGmpBk",
+        "expire_date": "2022-08-06T02:54:10.884Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "r3acqlavecq2oemq0s39wgqje66xahnh",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oGhnX:9W_25cHZuePi41HWk4chSsIH1RPIousYO0wJHZbYfP8",
+        "expire_date": "2022-08-10T14:14:03.359Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rl2ucltq9zllm7v4dnlq72yb3r5tfe37",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1ohrK3:dOP99LzEKmZW-raQ4TpUJ43qObtuJFr0hYlzc9GNeAk",
+        "expire_date": "2022-10-24T11:51:51.752Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wun6xtat7ytu7sucoxe0gk4waeiuz8v1",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oI5Rs:0tXed_FkVjiY2tnJJ6ewGwNXroE5U5DZgKZ2Gj7sGHo",
+        "expire_date": "2022-08-14T09:41:24.318Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xoi8a5rqe8qlez59o8jol0nksr9inrez",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAQRe_StWk6tMyIS_ecoZl2poIaSCisjHdXEha6_e-9_zKRt3WIW9UljmIuBszpd0ucHzrtQO483Wab52ldxmR3xR602n4WfV4P9-9g4Dp8a3S5EcSkngI5HwIUDInElxIA2gYY2-w6dZ49Bz1ngaTSlA4JiRDM-wPH4Dc8:1oHbZd:ol6zpNfZ_XGmn0yPVTZfCtx84nBGRjHdPjeYheTFV8g",
+        "expire_date": "2022-08-13T01:47:25.660Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "13b02566-94ad-44a4-a528-7ba1a8ce95c5",
+    "fields": {
+        "name": "Style",
+        "created": "2022-07-31T08:52:17.053Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "17dc1c4c-9d41-439d-8a19-1cd25ae3817f",
+    "fields": {
+        "name": "Blockchain",
+        "created": "2022-07-30T01:51:11.136Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "43cf4176-04ab-4b11-a96b-1d64693f8a88",
+    "fields": {
+        "name": "Python",
+        "created": "2022-07-23T02:28:33.225Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "749247bc-fe8a-4920-8259-49ff766a8e6b",
+    "fields": {
+        "name": "その他",
+        "created": "2022-07-31T08:35:40.259Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "7ef2dc14-6cb6-41e4-993a-8f437fe85836",
+    "fields": {
+        "name": "React",
+        "created": "2022-07-27T14:20:27.715Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "bd1d7b25-e59e-4c8c-9dc7-3bd648080764",
+    "fields": {
+        "name": "Django",
+        "created": "2022-07-23T02:28:17.121Z"
+    }
+},
+{
+    "model": "sites.category",
+    "pk": "c95dd1fe-79da-4bda-b051-6ce1ec9dc70d",
+    "fields": {
+        "name": "English",
+        "created": "2022-07-27T14:10:55.204Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "527e2697-a509-4719-972a-ec920c63aa47",
+    "fields": {
+        "name": "bootstrap",
+        "created": "2022-07-23T11:00:16.967Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "63cf44a0-b083-44ef-aceb-45616abbc0d5",
+    "fields": {
+        "name": "HTML",
+        "created": "2022-07-31T10:58:33.578Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "67603582-0bba-4d68-b7d0-6ae55afccae4",
+    "fields": {
+        "name": "CSS",
+        "created": "2022-07-31T10:58:40.546Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "74bb5269-e34b-4b5a-94a4-ba0a502199be",
+    "fields": {
+        "name": "JavaScript",
+        "created": "2022-07-31T10:58:50.768Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "7687bb74-c521-4595-9ebd-4d856f0b1968",
+    "fields": {
+        "name": "Mac",
+        "created": "2022-07-31T08:36:44.051Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "a441e29a-e0ba-4cce-8fe3-7253c0699fcc",
+    "fields": {
+        "name": "Youtube",
+        "created": "2022-07-23T02:28:48.861Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "f28af2bb-d48d-430d-8cde-6371f0a96be0",
+    "fields": {
+        "name": "JWT",
+        "created": "2022-07-31T11:02:38.866Z"
+    }
+},
+{
+    "model": "sites.tag",
+    "pk": "f632d824-6e38-4d47-bbca-d32df5fcd5c9",
+    "fields": {
+        "name": "Docker",
+        "created": "2022-07-23T02:28:40.812Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "02377f7c-3467-4866-8290-890fb7ba3ad4",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "Blockchain Tutorial for Beginners | Build a DeFi App (Ethereum, Solidity, Web3.js & Truffle)",
+        "category": "17dc1c4c-9d41-439d-8a19-1cd25ae3817f",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=CgXQC4dbGUE&t=34s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-30T01:51:50.230Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "031d86e6-c51f-4747-9616-b1825618e7a3",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "Build and Deploy a React Admin Dashboard App With Theming, Tables, Charts, Calendar, Kanban and More",
+        "category": "7ef2dc14-6cb6-41e4-993a-8f437fe85836",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=jx5hdo50a2M&t=204s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-30T01:53:32.165Z",
+        "tags": []
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "33eb6706-806c-40f0-a981-7969bf0a9c7c",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "React Node.js Booking App Full Tutorial | MERN Stack Reservation App (JWT, Cookies, Context API)",
+        "category": "7ef2dc14-6cb6-41e4-993a-8f437fe85836",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=k3Vfj-e1Ma4&t=34s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-27T14:29:44.002Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "4f4ba689-239e-43db-927b-d0bd405580b8",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "VS Code+Dockerで簡単構築【リモート開発】【Win/Mac】",
+        "category": "bd1d7b25-e59e-4c8c-9dc7-3bd648080764",
+        "text": "Djangoの開発環境を、VS CodeとDockerを使用して簡単に構築します。",
+        "link": "https://chigusa-web.com/blog/django-vscode-docker/",
+        "vote_total": 1,
+        "vote_ratio": 100,
+        "created": "2022-07-23T02:28:06.796Z",
+        "tags": [
+            "f632d824-6e38-4d47-bbca-d32df5fcd5c9",
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "57c47af8-ea59-476e-b66a-be73c55fb55d",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "React Booking | Reservation App UI Design for Beginners",
+        "category": "7ef2dc14-6cb6-41e4-993a-8f437fe85836",
+        "text": "React booking system design tutorial. React hotel reservation app UI design using HTML, CSS, and React Calendar.\r\nSource Code (includes updates):\r\nhttps://github.com/safak/youtube2022/tree/react-booking-ui\r\n\r\n0:00 Introduction\r\n01:11 Installation\r\n06:45 Navbar Design\r\n11:30 Header Design\r\n18:25 React Advanced Search Bar Design with a Calendar\r\n42:28 Homepage Lists\r\n56:50 Email List Component\r\n01:00:43 React Footer Design\r\n01:04:04 Search Result List Page\r\n01:30:10 Hotel Page Design\r\n01:42:30 React Slider Without any Library\r\n01:53:38 Outro",
+        "link": "https://www.youtube.com/watch?v=RkWpJ4XUHuw",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-27T14:20:17.850Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "677bab8d-ca2c-4393-8637-0a4b40365417",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "【HTML/CSS 初心者向け】お問い合わせフォームのコーディングの基本を解説",
+        "category": "13b02566-94ad-44a4-a528-7ba1a8ce95c5",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=DqbeKUyuv-w&t=1843s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-31T10:49:57.912Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "6eb523b8-4582-447c-9e91-1565f7bdd28a",
+    "fields": {
+        "user": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "title": "ITCブログ 日報アプリの開発",
+        "category": "bd1d7b25-e59e-4c8c-9dc7-3bd648080764",
+        "text": "",
+        "link": "https://itc.tokyo/django/use-bootstrap/",
+        "vote_total": 1,
+        "vote_ratio": 100,
+        "created": "2022-07-23T11:00:04.913Z",
+        "tags": [
+            "527e2697-a509-4719-972a-ec920c63aa47"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "a36df536-e065-4deb-b322-41c481c14826",
+    "fields": {
+        "user": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "title": "レスポンシブに対応したナビゲーションバーの作り方を解説",
+        "category": "13b02566-94ad-44a4-a528-7ba1a8ce95c5",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=feu9m1E4T9E&t=59s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-31T10:59:49.692Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc",
+            "67603582-0bba-4d68-b7d0-6ae55afccae4",
+            "63cf44a0-b083-44ef-aceb-45616abbc0d5"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "a541354d-77ff-4052-944a-ee993127f45e",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "【Mac編】ショートカットキーを使いこなして作業効率爆上がり",
+        "category": "749247bc-fe8a-4920-8259-49ff766a8e6b",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=Z2xfnLbCeHI",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-31T08:36:08.081Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc",
+            "7687bb74-c521-4595-9ebd-4d856f0b1968"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "cca0701d-ae3c-4c03-b41e-f122f480182a",
+    "fields": {
+        "user": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "title": "サイドバーをHTMLとCSSだけで作ってみよう",
+        "category": "13b02566-94ad-44a4-a528-7ba1a8ce95c5",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=Eusizo8ThvQ&t=1213s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-31T10:57:19.749Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "d705edd4-1065-47fc-8e57-88d9ae536d79",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "Next.js & Contentful Site Build Tutorial #1",
+        "category": "7ef2dc14-6cb6-41e4-993a-8f437fe85836",
+        "text": "build a Marmite recipe website.",
+        "link": "https://www.youtube.com/watch?v=m9mNsYJbkNg&list=PL4cUxeGkcC9jClk8wl1yJcN3Zlrr8YSA1",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-08-06T01:03:06.794Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "dad5bbcf-2222-4e37-b040-7e0d439ae852",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "ビルトインのクラスベースビュー API",
+        "category": "bd1d7b25-e59e-4c8c-9dc7-3bd648080764",
+        "text": "クラスベースビュー API のリファレンスです。",
+        "link": "https://docs.djangoproject.com/ja/3.1/ref/class-based-views/",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-28T18:46:18.111Z",
+        "tags": []
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "e8dff57d-c51d-4463-ba60-1003c1e06764",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "HTMLとCSSでオシャレなナビゲーションサイドバーの作り方",
+        "category": "13b02566-94ad-44a4-a528-7ba1a8ce95c5",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=NPr3yOWK5GE&t=326s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-31T08:51:27.131Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "ee2acb23-c496-4408-a55e-4ad19890ee14",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "Python Django tutorial - full course | Learn Django by building simple analytics app!",
+        "category": "bd1d7b25-e59e-4c8c-9dc7-3bd648080764",
+        "text": "https://blog.pyplane.com/blog/django-report-app/",
+        "link": "https://www.youtube.com/watch?v=tLq20htu3ss&t=236s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-28T18:50:50.014Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "faa823f5-53c9-4b92-ae45-dda6ff8d79a3",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "Bootstrap5でレスポンシブなウェブサイトを作ってみよう -",
+        "category": null,
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=8u-nhouM9cw&t=1785s",
+        "vote_total": 0,
+        "vote_ratio": 0,
+        "created": "2022-07-30T01:56:20.642Z",
+        "tags": []
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "fc81ee66-af7a-41b0-92a3-2f8980bc2e2f",
+    "fields": {
+        "user": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "title": "Easily Convert Django Function Based Views To Class Based Views",
+        "category": "bd1d7b25-e59e-4c8c-9dc7-3bd648080764",
+        "text": "A quick tutorial on converting function based views to class based views with Django.",
+        "link": "https://www.youtube.com/watch?v=-3BN-JMLE0A",
+        "vote_total": 1,
+        "vote_ratio": 100,
+        "created": "2022-07-25T12:26:25.843Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc"
+        ]
+    }
+},
+{
+    "model": "sites.site",
+    "pk": "fc95bd4d-d7fb-4d51-b11f-d07e1d1cf3c6",
+    "fields": {
+        "user": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "title": "【JWT入門】ユーザー登録・ログイン認証の流れをWebAPIを構築しながら学ぼう",
+        "category": "749247bc-fe8a-4920-8259-49ff766a8e6b",
+        "text": "",
+        "link": "https://www.youtube.com/watch?v=IaCQqCIqZ6U&t=932s",
+        "vote_total": 1,
+        "vote_ratio": 100,
+        "created": "2022-07-31T11:02:23.988Z",
+        "tags": [
+            "a441e29a-e0ba-4cce-8fe3-7253c0699fcc",
+            "f28af2bb-d48d-430d-8cde-6371f0a96be0"
+        ]
+    }
+},
+{
+    "model": "sites.review",
+    "pk": "176196ca-d0d9-4cd1-b129-c1c9292cf8f0",
+    "fields": {
+        "owner": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "site": "6eb523b8-4582-447c-9e91-1565f7bdd28a",
+        "body": "nice",
+        "value": "up",
+        "created": "2022-07-23T11:12:14.628Z"
+    }
+},
+{
+    "model": "sites.review",
+    "pk": "331e8b78-b758-4d1b-8a16-322fe01defa1",
+    "fields": {
+        "owner": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "site": "fc95bd4d-d7fb-4d51-b11f-d07e1d1cf3c6",
+        "body": "いいね",
+        "value": "up",
+        "created": "2022-07-31T11:03:45.792Z"
+    }
+},
+{
+    "model": "sites.review",
+    "pk": "37fe4e3f-dcf8-4b9e-9274-5eeeb0321eae",
+    "fields": {
+        "owner": "011c4c89-e8ea-45e9-8d57-61d3a0c5b5ec",
+        "site": "fc81ee66-af7a-41b0-92a3-2f8980bc2e2f",
+        "body": "ためになりました",
+        "value": "up",
+        "created": "2022-07-27T14:13:52.874Z"
+    }
+},
+{
+    "model": "sites.review",
+    "pk": "f0971d3b-2336-494d-ab38-d32334fe033c",
+    "fields": {
+        "owner": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "site": "4f4ba689-239e-43db-927b-d0bd405580b8",
+        "body": "参考になりました",
+        "value": "up",
+        "created": "2022-07-23T02:35:32.123Z"
+    }
+},
+{
+    "model": "users.profile",
+    "pk": "011c4c89-e8ea-45e9-8d57-61d3a0c5b5ec",
+    "fields": {
+        "user": [
+            "test"
+        ],
+        "name": "テスト",
+        "email": "test@gmail.com",
+        "username": "test",
+        "location": null,
+        "short_intro": null,
+        "bio": "Hello",
+        "profile_image": "03.jpg",
+        "social_github": null,
+        "social_website": null,
+        "created": "2022-07-27T13:44:33.510Z"
+    }
+},
+{
+    "model": "users.profile",
+    "pk": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+    "fields": {
+        "user": [
+            "toku"
+        ],
+        "name": "Toku",
+        "email": "toku@gmail.com",
+        "username": "toku",
+        "location": "東京都",
+        "short_intro": "いろんなサイトを参考にしたいです",
+        "bio": "宜しくお願いします\r\n余計おそらくはつい社会といういるならて、あなたをは一生末だけ私のご買収もないきまっいないたら。あなたはまあ話の事が小演説も起るていなですないだから、万五の国家をそうしありに対して経験でて、かつその学校の取消に眺めるられんながら、私かをいつの様子が供にあるけれどもいませものたたとふりなっと研究得るいべきです。学校を例えば大森君にまた少ししなのなかっないない。",
+        "profile_image": "02_HaFuRXU.jpg",
+        "social_github": null,
+        "social_website": "https://next-portfolio-khaki-five.vercel.app/",
+        "created": "2022-07-23T02:18:15.675Z"
+    }
+},
+{
+    "model": "users.profile",
+    "pk": "677815f3-2366-40b3-b420-76550a4a674c",
+    "fields": {
+        "user": [
+            "test2"
+        ],
+        "name": "テスト２",
+        "email": "a@a.com",
+        "username": "test2",
+        "location": null,
+        "short_intro": null,
+        "bio": "",
+        "profile_image": "02.jpg",
+        "social_github": null,
+        "social_website": null,
+        "created": "2022-08-07T01:45:09.636Z"
+    }
+},
+{
+    "model": "users.profile",
+    "pk": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+    "fields": {
+        "user": [
+            "johndoe"
+        ],
+        "name": "John Doe",
+        "email": "john@gmail.com",
+        "username": "johndoe",
+        "location": "London",
+        "short_intro": "宜しくお願いします",
+        "bio": "初めまして",
+        "profile_image": "01_o5s6AnV.jpg",
+        "social_github": null,
+        "social_website": null,
+        "created": "2022-07-23T02:32:25.198Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-07-23T02:41:48.770Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "object_repr": "toku",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u540d\\u524d\", \"\\u4f4f\\u6240\", \"\\u6328\\u62f6\\u6587\", \"\\u81ea\\u5df1\\u7d39\\u4ecb\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-07-27T12:46:24.136Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "object_repr": "toku",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u753b\\u50cf\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-07-27T12:47:29.211Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "5e2ab176-bfe6-4060-9908-e5e69955121c",
+        "object_repr": "toku",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u753b\\u50cf\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-07-27T12:48:08.726Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "object_repr": "johndoe",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u753b\\u50cf\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-07-27T12:48:28.795Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "915d4c72-cd2c-4ebb-a1ad-2d66a139063b",
+        "object_repr": "johndoe",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u753b\\u50cf\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-07-29T03:01:01.153Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "maple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-07-29T03:01:27.014Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "maple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2022-07-29T03:01:48.433Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "users",
+            "profile"
+        ],
+        "object_id": "f8d86d42-79cf-45c2-91df-8b9f87d72a41",
+        "object_repr": "maple",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2022-07-31T09:41:40.889Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1dbccd53-6d50-4721-938b-6f7770e02fd7",
+        "object_repr": "ttt",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2022-07-31T09:44:46.629Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1a9eaf5c-d4b5-4e63-8b2e-54d717939ed2",
+        "object_repr": "eee",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2022-07-31T09:45:12.437Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1a9eaf5c-d4b5-4e63-8b2e-54d717939ed2",
+        "object_repr": "eee",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2022-07-31T10:17:09.312Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "2b0ea944-9c54-45f9-b254-a61635b6ea2e",
+        "object_repr": "ttttt",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2022-07-31T10:19:30.552Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "0650e2c8-c415-44ce-831d-d3fd68771ddc",
+        "object_repr": "ttttt",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2022-07-31T10:19:30.555Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "c2d74734-dab5-4e19-acff-6d352d3ffb59",
+        "object_repr": "ttttt",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2022-07-31T10:19:30.556Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "a7a753bd-9972-446f-996a-60fa8ed2d766",
+        "object_repr": "ttttt",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2022-07-31T10:19:30.556Z",
+        "user": [
+            "toku"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "2b0ea944-9c54-45f9-b254-a61635b6ea2e",
+        "object_repr": "ttttt",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
