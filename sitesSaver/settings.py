@@ -129,16 +129,16 @@ DATABASES = {
     'default': dj_database_url.config(default='postgres://postgres:test123@localhost/sites-saver')
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'sites-saver',
-#         'USER': 'postgres',
-#         'PASSWORD': 'test123',
-#         'HOST': 'localhost',
-#         'PORT': '5432'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sites-saver',
+        'USER': 'postgres',
+        'PASSWORD': 'test123',
+        'HOST': 'localhost',
+        'PORT': '5432'
+    }
+}
 
 # DATABASES = {
 #     'default': {
