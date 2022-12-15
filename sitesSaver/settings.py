@@ -125,9 +125,9 @@ WSGI_APPLICATION = 'sitesSaver.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(default='postgres://postgres:test123@localhost:5432/sites-saver')
-}
+# DATABASES = {
+#     'default': dj_database_url.config(default='postgres://postgres:test123@localhost:5432/sites-saver')
+# }
 
 # DATABASES = {
 #     'default': {
